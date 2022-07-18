@@ -1,0 +1,40 @@
+.cuadrado {
+    background-image: url(fondopuntos.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed; /*aquí bloqueamos la imagen al hacer skrol para abajo*/
+}
+
+.fondoblanco,
+.titulos,
+article {
+    background-color: rgb(252, 253, 252);
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+.titulos {
+    text-align: center;
+}
+
+.fotografia {
+    display: block;
+    margin: auto;
+}
+
+.fondoalfa {
+    background-image: linear-gradient(rgba(0, 0, 200, 0.178) ,rgba(131,151,131,0.8)), url(cisne.jpg);
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 431px;
+    background-position: center;
+}
+
+.gradiente {
+    width: 200px;
+    height: 200px;
+    margin: 2em;
+    float:left;
+    background-color: aliceblue;
+    margin: 10px;
+}

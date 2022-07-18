@@ -1,0 +1,24 @@
+.div1 {
+    float: left;
+    background-color: rgb(186, 230, 142);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.div2 {
+    border: crimson 2px solid ;
+}
+
+.div3 {
+    float: left;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 58px;
+}
+
+.div4 {
+    clear: left;
+    border: solid 2px crimson;
+}

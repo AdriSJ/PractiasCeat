@@ -1,0 +1,16 @@
+.pinline {
+    display: inline;
+}
+
+#imag {
+    display: block;
+}
+
+
+.lista li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    border: solid;
+    background-color: grey;
+}

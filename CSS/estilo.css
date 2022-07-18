@@ -1,0 +1,23 @@
+p {
+    color: rgb(255, 21, 0);
+    border: 3px solid black;
+    background-color: blueviolet;
+}
+h1 {
+    color:chartreuse;
+    size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#segundo {
+    border-color: 10px cyan;
+    color: darkblue;
+    text-align: left;
+    font-family: initial;
+    
+}
+.parrafo {
+    font-size: 25px;
+    background-color: rgb(135, 159, 163);
+}

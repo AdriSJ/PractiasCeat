@@ -1,0 +1,86 @@
+header, footer {
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(95, 94, 94);
+}
+
+section{
+    width: 65%;
+}
+
+aside {
+    width: 20%;
+}
+
+header {
+    height: 8em;
+    background-color: rgb(204, 240, 169);
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+nav {
+    margin: 20px 0px;
+    height: 20px;
+    background-color: rgb(85, 243, 164);
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+nav a {
+    margin-right: 7em;
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    background-color: rgb(189, 185, 126);
+}
+
+section {
+    float:left;
+    background-color: rgb(101, 117, 72);
+}
+
+aside, section {
+    height: 400px;
+    padding: 190px 10px;
+    margin: 1em 1.5em 2em 1.5em;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(195, 166, 91);
+    width: 100%;
+    text-align: center;
+    height: 2em;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    nav{ 
+        background-color: azure;
+        width: 100%;
+        height: 10em;
+        margin: 15px auto;
+    }
+    nav a {
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+    aside,section {
+        width: 100%;
+        margin: auto;
+        float:left
+    }
+}

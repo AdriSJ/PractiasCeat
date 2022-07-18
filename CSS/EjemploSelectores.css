@@ -1,0 +1,41 @@
+/*para elementos con clase grande*/
+.grande {
+    font-size: x-large;
+}
+
+/*para elementos con id enorme*/
+#enorme {
+    font-size: xx-large;
+}
+
+/*para elementos con atributo target="_blank"*/
+a[target="_blank"]{
+    font-size:x-large
+}
+
+/*para elementos p hijos de section*/
+section >p{
+    text-decoration: underline;
+}
+
+/*para elementos p descendentes de section*/
+section p{
+    font-size: x-large;
+}
+
+
+
+/*para el primer elemento de una lista*/
+li:first-child {font-size: 30px;}
+
+
+/*para el ultimo elemento de una lista*/
+li:last-child {color:royalblue}
+
+
+/*para un numero determinado elemento de una lista*/
+li:nth-child(3){
+    color: green;
+}
+
+

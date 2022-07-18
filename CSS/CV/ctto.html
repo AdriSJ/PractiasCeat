@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Adrián Serrano Jareño">
+    <link rel="icon" href="./Images/favicon.png">
+    <meta content="keywords" content="informatico, diseño web, desarrollo web, programador web">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <title>Adrián Serrano Jareño</title>
+    <script type="text/javascript" src="./script/ctto.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Adrián</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="menu" id="menu1">Home</a>
+        <a href="resumen.html" class="menu" id="menu2">Resumen</a>
+        <a href="portafolio.html" class="menu" id="menu3">Portafolio</a>
+        <a href="blog.html" class="menu" id="menu4">Blog</a>
+        <a href="#" class="menu" id="menu5">Contacto</a>
+    </nav>
+    <section class="stylectto">
+        <h2 class="tituloh2">¿Quieres saber más?</h2>
+        <form class="ctto" action="" method="GET">
+        <fieldset>
+            <legend>Fomulario</legend>
+            <label class="cuadro" for="nombre" id="nombre"></label>
+            <input class="cuadro" type="text" id="nombre" name="nombre" size="30" required placeholder="Nombre">
+            <label class="cuadro" for="correo"></label>
+            <input class="cuadro" type="email" name="email" id="correo" required placeholder="ejemplo@dominio.com" size="30">
+            <label class="cuadro" for="telefono"></label>
+            <input class="cuadro" type="tel" name="telefono" id="telefono" placeholder="Nº teléfono" maxlength="9"><br><br>
+            <label class="cuadrotexto" for="mensaje"></label>
+            <textarea class="cuadrotexto" name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Escribe aquí tu mensaje..."></textarea><br><br>
+            <input class="boton" type="submit" value="Enviar" onclick="return comprobarFormulario()">
+        </fieldset>
+        </form>
+    </section>
+    <footer>
+       
+    </footer>
+</body>
+</html>

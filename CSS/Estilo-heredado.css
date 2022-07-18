@@ -1,0 +1,9 @@
+.ancho1{
+    width: 60%;
+    height: 60%;
+    background-color: cadetblue;
+}
+/* con aquí hemos puesto que herede el ancho de la caja anterior, podriamos poner un porcentaje y asi poner que queremos nosotros*/
+.imagen{
+    width: inherit;
+}

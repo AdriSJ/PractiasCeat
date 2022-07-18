@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Kiwi Maru', serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    width: 30%;
+    height: 100px;
+    float: left;
+    /* border: black solid 1px; */
+    background-color: rgb(248, 248, 248);
+    border-bottom: solid 2px  rgb(104, 103, 103);
+}
+nav{
+    width: 70%;
+    height: 100px;
+    float: right;
+    /* border: black solid 1px; */
+    background-color: rgb(248, 248, 248);
+    border-bottom: solid 2px  rgb(104, 103, 103);
+}
+nav a{
+    /* border: solid 1px black; */
+    font-size: 20px;
+    line-height: 8;
+    padding-top: 80px;
+    margin: 0px 40px 0px 10px;
+    text-decoration: none;
+    color: orange;
+}
+nav a:hover {
+    background-color: orange;
+    color:white;
+    border-bottom: red solid 5px;
+}
+
+aside {
+    width: 30%;
+    height: 500px;
+    float: left;
+    /* border: black solid 1px; */
+    background-color: rgb(224, 224, 224);
+}
+#fotoperfil {
+    display: block;
+    margin: 120px auto;
+    width: 70%;
+    border-radius: 100%;
+    border: rgb(104, 103, 103) 5px solid;
+}
+
+section {
+    width: 70%;
+    height: 500px;
+    float: right;
+    /* border: black solid 1px; */
+    background-color: rgb(224, 224, 224);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    float: left;
+    /* border: solid 1px black; */
+    background-color: rgb(224, 224, 224);
+
+}
+.redondo {
+    float: right;
+    display: inline;
+    text-align: center;
+    margin: 5px 80px 5px 30px;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    padding-top: 30px;
+}
+#redondo1 {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#redondo1,.redondo1 {
+    background-color: orange;
+}
+#redondo2 {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#redondo2, .redondo2 {
+    background-color: rgb(7, 200, 200)
+}
+#redondo3 {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#redondo3, .redondo3 {
+    background-color: green;
+}
+#redondo4 {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#redondo4, .redondo4 {
+    background-color: rgb(214, 200, 3)
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    border-bottom: black dotted 1px;
+    font-size: 35px;
+}
+h3 {
+    margin-left: 10%;
+}
+ul {
+    margin-left: 12%;
+}
+p {
+    text-align: justify;
+    margin: 1%;
+}
+
+.stylectto {
+    width: 100%; 
+}
+form {
+    width: 60%;
+    margin: auto;
+}
+.cuadro {
+    padding-right: 4%; 
+}
+.cuadrotexto {
+    padding-left: 19%;
+}
+.boton {
+    margin-left: 45%;
+}

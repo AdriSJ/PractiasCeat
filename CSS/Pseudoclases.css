@@ -1,0 +1,91 @@
+
+/* para seleccionar la primera etiqueta de un tipo*/
+
+p:first-of-type {
+    color:teal;
+    text-decoration: underline black;
+}
+
+/* para seleccionar la primera leta de donde queramos, este caso hemos seleccionado el segundo parrafo mediante una clase*/
+
+.parrafo2::first-letter {
+    font-size: 40px;
+}
+
+/* para seleccionar la primera linea, en este caso hemos seleccionado la del tercer parrafo mediante una identificación (id)*/
+
+#parrafo3::first-line {
+    font-style: italic;
+    color: blue
+}
+
+/* para cuando queramos poner algo antes de un elemento y despues*/
+h1::before{
+content: url(IconoBG.png);
+}
+h1::after{
+content: url(IconoBG.png);
+}
+
+/* esto lo usamos para cuando seleccionamos el texto con el ratón, si no ponemos etiqueta, selecciona todo el texto, es decir, si ponemos::selection*/
+.parrafo2::-moz-selection { /* para firefox*/ 
+color: red;
+background: yellowgreen;
+}
+#parrafo3::selection {
+color: blue;
+background: brown;
+}
+
+
+
+/* este lo usamos para cambiar el color de los elementos de una lista*/
+li::marker {
+    color: orange;
+}
+
+
+/* aquí vemos como con la etiqueta ~ podemos cambiar lo siguiente que aparece, en este caso partimos de un h3 y despues la siguiente etiqueta.*/
+h3~form {
+    font-size: xx-large;
+}
+
+
+
+
+#tabla{
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid rgb(64, 102, 64);
+    border-collapse: collapse;
+}
+
+#tabla th,
+#tabla td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+#tabla tr:nth-child(even) {
+    background: paleturquoise;
+}
+
+#tabla tr:nth-child(odd) {
+    background: red;
+}
+
+#tabla th {
+    background: black;
+    color:cornsilk
+}
+
+ /* la etiqueta hover vale para cuando pasas por encima con el raton cambie de color*/
+#tabla tr:hover {
+    background-color: greenyellow;
+    color: hotpink;
+}
+
+
+.parrafo2:hover {
+    font-size: xx-large;
+}

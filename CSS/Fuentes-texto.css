@@ -1,0 +1,62 @@
+/* aquí vemos como con el "*" seleccionamos toda la página.*/
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.parrafo1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cursiva{
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.parrafo2 {
+    font-variant: small-caps;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.parrafo4 {
+    font:italic small-caps bolder 20px Georgia, serif !important;
+}
+
+.parrafo5 {
+    color: cadetblue;
+    text-align: justify;
+    text-decoration: none;
+    text-indent: 50px; /* este sirve como tabulador en la primera linea*/ 
+}
+.parrafo5::first-letter {
+    font-size: 40px;
+    color: darkgreen;
+}
+
+/* este vale para poner mayuscula*/
+.tras1 {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+/* este sirve para poner minusculas*/
+.tras2 {
+    text-transform: lowercase;
+    color: darkblue;
+}
+
+
+.parrafo6 {
+    letter-spacing: 3px; /* aquí cambiamos el especio entre letras*/
+    word-spacing: 6px; /* aquí cambiamos el espacio entre palabras*/
+    line-height: 2; /* aquí cambiamos el interliniado*/
+}
+
+h1 {
+    text-shadow: rgb(190, 80, 7) 3px 3px; /* aquí ponemos un sombreado al texto*/
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+

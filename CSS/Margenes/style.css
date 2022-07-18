@@ -1,0 +1,54 @@
+.encabezado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2 {
+    border: 1px gray dotted;
+    text-align: center;
+}
+
+.dotted {border: rgb(170, 170, 241) 3px dotted;}
+.dashed {border-style: dashed;}
+.solid { border-style: solid;}
+.double { border-style: double;}
+.groove { border-style: groove;}
+.ridge { border-style: ridge;}
+.inset { border-style: inset;}
+.outset { border-style: outset;}
+.none { border-style: none;}
+.hidden { border-style: hidden;}
+
+
+.uno {
+    border-style: solid;
+    border-width: 5px 20px;
+}
+
+.dos {
+    border-style: solid;
+    border-width: 20px 5px;
+}
+
+.tres {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+}
+
+.cuatro4 {
+    border-style: dotted solid double dashed;
+}
+
+.tres3 {
+    border-style: dotted solid double;
+}
+
+.dos2 {
+    border-style: solid dotted;
+}
+
+.uno1 {
+    border-style: groove;
+}
+

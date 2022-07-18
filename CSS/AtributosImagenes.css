@@ -1,0 +1,23 @@
+img[src$="jpg"] {
+    border: 10px solid blue;
+}
+
+img[alt*="Goo"] {
+    border: solid 10px chartreuse;
+}
+
+img[src^="Ti"] {
+    background-color: seagreen;
+    border: solid red 10px;
+}
+
+[type="text"] {
+    background-color: royalblue;
+}
+
+[type="submit"] {
+    background-color: seagreen;
+    font-size: 15px;
+    font-style: oblique;
+    border: red solid 10px;
+}

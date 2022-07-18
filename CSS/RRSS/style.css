@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.foto1 {
+    width: 100%;
+}
+.titulo {
+    color: rgba(226, 226, 226, 0.842);
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: absolute;
+    font-size: 70px;
+}
+
+.menu {
+    background-color: rgb(73, 94, 163); 
+    height: 35px;
+    padding-top: 8px;
+    margin-top: -3px;
+    text-align: center;   
+}
+
+.menu a {
+    color:white;
+    text-align: none;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.intro {
+    width: 80%;
+    margin: auto;
+}
+section p{ 
+    text-align: justify;
+    font-family: 'Oxygen', sans-serif;
+    color: rgb(27, 27, 146);
+}
+.tituloh2 {
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    color: rgb(27, 27, 146);
+}
+
+footer {
+    clear: both;
+    background-color: rgb(38, 45, 149);
+}
+
+.tituloh3 {
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    color: rgb(27, 27, 146);
+    margin-top: 100px;
+}
+.imgface {
+    float: left;
+    width: 10%;
+    margin-left: 20px;
+}
+.logof {
+    width: 80%;
+}
+.pface {
+    padding: 20px 30px 80px 0px;
+}
+.imgtwi {
+    float: left;
+    width: 10%;
+    margin-left: 20px;
+}
+.logotwi {
+    width: 75%;
+}
+.ptwi {
+    padding: 20px 30px 80px 0px;
+}
+.imglin {
+    float: left;
+    width: 10%;
+    margin-left: 20px;
+}
+.logolin {
+    width: 75%;
+}
+.plin {
+    padding: 20px 30px 80px 0px;
+}
+.imgins{
+    float: left;
+    width: 10%;
+    margin-left: 20px;
+}
+.logoins {
+    width: 80%;
+    padding-top: 25px;
+}
+.pins {
+    padding: 20px 30px 80px 0px;
+}
