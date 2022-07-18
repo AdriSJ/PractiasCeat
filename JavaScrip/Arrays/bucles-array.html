@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays mediante bucles</title>
+</head>
+<body>
+    <script>
+        var num=10;
+        var lista=new Array(num);//crea una array con elementos vacios
+        var i;
+        for (i=0;i<lista.length;i++){//inicializar el array
+            lista[i]=i;
+        }
+        //recorrer de principio a fin
+        for (i=0;i<lista.length;i++){
+            document.write(lista[i]+" "+"<br>");
+        }
+        document.write("<hr>");
+        //recorre al reves
+        for (i=lista.length-1;i>=0;i--){
+            document.write(lista[i]+" "+"<br>");
+        }
+        //solo indica pares
+        for (i=0;i<lista.length;i=i+2){
+            document.write(lista[i]+" "+"<br>");
+        }
+        //hasta que acabe el array o encuentre un tres
+        for (i=0;i<lista.length;i++){
+            document.write(lista[i]+" "+"<br>");
+            if (lista[i]==3){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

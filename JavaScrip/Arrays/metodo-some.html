@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método some</title>
+</head>
+<body>
+    <script>
+        function mayorCero(elem,indice,array){
+            if(elem>0)return true
+            else return false
+        }
+        var numeros=[1,-4,-6,8];
+        r=numeros.some(mayorCero);
+        if (r==true){
+            document.write("Algunos son mayores que 0");    
+        }else{
+            document.write("Ninguno es mayor que 0");
+        }
+        
+    </script>
+</body>
+</html>

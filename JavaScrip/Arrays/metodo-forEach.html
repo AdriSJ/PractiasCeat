@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método forEach</title>
+</head>
+<body>
+    <script>
+      function cuadrado(elem,indice,numeros){
+          numeros[indice]=elem*elem;
+      }
+      var numeros=[1,3,5,7];
+      numeros.forEach(cuadrado);
+      document.write(numeros+"<br><br><br>");
+    </script>
+    <hr>
+    <script>
+        var numeros2=[2,4,6,8];
+        numeros2.forEach(function(elem1,indice1,numeros1){
+            numeros1[indice1]=elem1*elem1;
+        })
+        document.write(numeros2+"<br><br><br>");
+    </script>
+</body>
+</html>

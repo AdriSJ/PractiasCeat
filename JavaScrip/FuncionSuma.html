@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion de suma</title>
+</head>
+<body>
+    <h1>Ejemplo de funtion para sumar</h1>
+    <script type="text/javascript">
+        var a=3,b=4,r;
+        function suma(num1,num2){
+            var resul;
+            resul=num1+num2;
+            return resul
+        }
+        r=suma(a,b);
+        document.write(a+" + "+b+" = "+r+"<br>");
+        document.write(suma(a,8));
+    </script>
+    <hr>
+    <h2>Ejemplo de aumentar valor</h2>
+    <script type="text/javascript">
+        var a=1;
+        function incrementar(num){
+            num++;
+            return num;
+        }
+        /* en las tres primeras líenas vemos como lo llama pero no esta completo, es decir solo llamamos al valor a, pero no a la función, excepto la segunda, luego las dos últimas lineas le cambiamos el valor de a.*/
+        incrementar(a);
+        document.write(a+"<br>");
+        document.write(incrementar(a)+"<br>");
+        document.write(a+"<br>");
+        a=incrementar(a)
+        document.write(a);    
+    </script>
+</body>
+</html>

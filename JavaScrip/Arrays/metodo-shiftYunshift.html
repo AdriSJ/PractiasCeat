@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método shift y unshift</title>
+</head>
+<body>
+    <script>
+       var notas =["do","re","mi"];
+        r=notas.shift();//sirve para eliminar el primer elemento
+        document.write(notas+"<br>");//muestra como quedaria la cadena eliminando el primer elemento 
+        document.write(r+"<br>");//muestra el elemento borrado
+    </script>
+
+    <script>
+        var notas=("do");
+        r=notas.unshift("re","mi");//sirve para añadir elementos al principio
+        document.write(notas+"<br>");//te muestra como quedaria el array modificado con los dos elementos que hemos añadido
+        document.write(r+"<br>");//te muestra ahora la longitud del array.
+        
+    </script>
+</body>
+</html>

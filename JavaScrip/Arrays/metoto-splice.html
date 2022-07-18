@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método splice</title>
+</head>
+<body>
+    <script>
+       var notas =["do","re","mi","fa","sol","la","si"];
+        r=notas.splice(1,1);//suprime el re, el primer indicador "1", te dice la posición, el segundo indicador "1 te dice los que tienes que borrar."
+        document.write(notas+"<br>");
+        r=notas.splice(4,0,"si","sol");//añade dos elementos sin borrar
+        document.write(notas+"<br>");
+        r=notas.splice(2,2,"la");//añade un elemento y boorra dos elementos
+        document.write(notas+"<br>");
+        document.write(r);//muestra los ultimos elemntos quitados.
+    </script>
+</body>
+</html>

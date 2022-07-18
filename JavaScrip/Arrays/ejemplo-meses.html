@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Meses</title>
+</head>
+<body>
+    <script>
+        var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        document.write("El mes seleccionado es "+meses[5]+"<br><br><br>")//Imprimira Junio, porque empieza a contar desde 0, es decir, Enero=0,Febrero=1,etc.
+        for (var x=0;x<meses.length;x++){
+            document.write("El mes "+(x+1)+" es: "+meses[x]+"<br>")
+        }
+        var habitantes=new Array(5);
+        document.write("Longitud de la linea 15= "+habitantes.length+"<br><br>");
+        habitantes[1]=12;
+        habitantes[3]=4;
+        habitantes[5]=9;
+        habitantes[8]=10;
+        document.write("Longitud de la linea 19= "+habitantes.length+"<br><br>");
+        for(var i=0;i<habitantes.length;i++){
+            document.write("Longitud de la linea 22= "+habitantes[i]+"<br>");
+        }
+        //En la primera impresión sera 5, que es el valor que definimos entre parentesis y luego en la segunda impresión nos mostrara 9, porque hemos añadido valor entre los [], es decir, podemos ampliar las variables, en las que no hay definido valor, nos dara indefinido. (Poco utilizado).
+    </script>
+    <hr><br><br>
+    <script>
+        var meses2=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        meses2.forEach(function(mes,indice,matriz){
+            document.write("El mes "+(indice+1)+" es: "+matriz[indice]+"<br>");
+        })
+    </script>
+</body>
+</html>

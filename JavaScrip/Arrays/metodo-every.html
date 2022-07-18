@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método every</title>
+</head>
+<body>
+    <script>
+        function mayorCero(elem,indice,array){
+            if(elem>0)return true
+            else return false
+        }
+        var numeros=[1,-4,-6,8];
+        r=numeros.every(mayorCero);
+        if (r==true){
+            document.write("Todos son mayores que 0");    
+        }else{
+            document.write("No todos son mayores que 0");
+        }
+        //es como filter pero en vez de mirar por elemento aqui lo hace en bloque, se miran todas las condiciones.
+    </script>
+</body>
+</html>
