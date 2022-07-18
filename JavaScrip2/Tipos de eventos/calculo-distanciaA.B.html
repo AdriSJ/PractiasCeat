@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula los gastos de A y B</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+        }
+        #demo{
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 30px;
+        }
+        #caja{
+            margin: auto;
+            border: black dotted 2px;
+            width: 300px;
+            padding-left: 50px;
+            font-family: cursive;
+        }
+        #boton{
+            margin-left: 200px;
+            border-radius: 10px;
+            background-color: rgb(172, 206, 207);
+            border: none;
+            padding: 5px 5px;
+            font-weight: 600;
+
+        }
+        span{
+            color: blue;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        a{
+            color: green;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        select{
+            border: none;
+            font-family:sans-serif;
+            padding-left: 20px;
+        }
+    </style>
+        <script>
+            function calcular(){
+                var listax=document.getElementById("lista1");
+                var valorx=listax.options[listax.selectedIndex].value;
+                var listay=document.getElementById("lista2");
+                var valory=listay.options[listay.selectedIndex].value;
+                var desde=listax.options[listax.selectedIndex].text;
+                var hasta=listay.options[listay.selectedIndex].text;
+                if(valorx==valory){
+                    var gastos=10;
+                }else{
+                    var gastos=10*2;
+                }
+                demo.innerHTML="Los gastos de envio desde "+"<span>"+desde+"</span>"+" hasta "+"<span>"+hasta+"</span>"+" es de: "+"<a>"+gastos+"</a>"+" euros."
+            }
+        window.onload=function(){
+            boton.addEventListener("click",calcular);
+        }
+        </script>
+</head>
+<body>
+    <h1>Calcula el gasto de envío</h1>
+    <div id="caja">
+    <p>
+        Desde: 
+    <select name="lista1" id="lista1">
+        <option value="0"></option>
+        <option value="1">Asturias</option>
+        <option value="2">Andalucia</option>
+        <option value="3">Valencia</option>
+        <option value="4">Madrid</option>
+    </select>
+    </p>
+    <p>
+        Hasta:
+    <select name="lista2" id="lista2">
+        <option value="0"></option>
+        <option value="1">Asturias</option>
+        <option value="2">Andalucia</option>
+        <option value="3">Valencia</option>
+        <option value="4">Madrid</option>
+    </select>
+    </p>
+    <p>
+        <button type="button" id="boton"  >Calcular</button>
+    </p>
+    </div>
+    <div id="demo"></div>
+
+</body>
+</html>

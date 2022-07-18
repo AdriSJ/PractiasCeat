@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores de los formularios</title>
+    <script type="text/javascript">
+        function cogerDatos(){
+            var input,radio,checkbox,lista,texto,valor,indiceSel;
+            input=document.getElementById("ap");//coge nombre y apellido
+            console.log("Valor del campo de texto: "+input.value);//lo muestra
+            radio=document.getElementsByName("sexo");//coge la selección de radio
+            for (var i=0;i<radio.length;i++){//recorre uno a uno y verifica el seleccionado
+                if(radio[i].checked){
+                    console.log("Botón de radio escogido: "+radio[i].value)
+                }
+            }
+            if(document.getElementById("antAlumno").checked==true){//cogie si el checkbox seleccionado
+                console.log("Es antiguo alumno");//lo muestra
+            }
+            lista=document.getElementById("lista");//coge los valores de la lista
+            indiceSel=lista.selectedIndex;//se utiliza esta propiedad para coger la opcion seleccionada
+            texto=lista.options[indiceSel].text;//coge el texto de la opcion seleccionada
+            valor=lista.options[indiceSel].value;//coge el valor de la opcion seleccionada
+            console.log("Ciclo seleccionado: "+texto+" valor: "+valor);
+            
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            Nombre y apellidos: <input type="text" id="ap" required name="apellido">
+        </p>
+        <p>
+            Mujer <input type="radio" name="sexo" value="mujer"> Hombre<input type="radio" name="sexo" value="hombre">
+        </p>
+        <p>
+            Antiguo alumno <input type="checkbox" id="antAlumno" name="antiguo">
+        </p>
+        <p>
+            Solicita convalidación: <input type="checkbox" name="conva">
+        </p>
+        <select name="ciclo" id="lista">
+            <option value=""></option>
+            <option value="daw">Desarrollo de aplicaciones web</option>
+            <option value="dam">Desarrollo de aplicaciones multiplataforma</option>
+        </select>
+        <p>
+        <input type="button" value="Enviar" onclick="cogerDatos()">
+        <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>

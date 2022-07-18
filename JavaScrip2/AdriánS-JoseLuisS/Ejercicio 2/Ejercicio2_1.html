@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.1</title>
+    <script type="text/javascript">
+        function comprobarEdad(){
+        var a=document.getElementById("tuedad").value;
+        if(isNaN(a)||a>=100){
+            document.getElementById("error").innerHTML="ERROR: No ha insertado bien su edad. Solo dígitos números e iguales o menos a 100."
+        }
+        if(a<13){
+            document.getElementById("edad").innerHTML="Usted es muy joven, porque tiene: "+a;
+        }
+        if(a>=14&&a<=18){
+            document.getElementById("edad").innerHTML="Usted es un adolescente, porque tiene: "+a;
+        }
+        if(a>=19&&a<=65){
+            document.getElementById("edad").innerHTML="Usted es un adulto, porque tiene: "+a;
+        }
+        if(a>=66){
+            document.getElementById("edad").innerHTML="Usted es un jubilado, porque tiene: "+a+" disfrute de su jubilación.";
+        }} 
+             
+    </script>
+</head>
+<body>
+    <form action="">
+    <p>
+        <label for="edad" class="alt">Indique su edad: </label>
+        <input type="text" id="tuedad" class="alt" name="edad">
+    </p><p>
+        <input type="button" value="Enviar" class="boton" onclick="comprobarEdad()">
+    </p>
+    </form>
+    <div id="edad"></div>
+    <div id="error"></div>
+</body>
+</html>

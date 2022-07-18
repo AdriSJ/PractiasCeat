@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos javascript</title>
+</head>
+<body>
+    <h2>Objetos en javascript</h2>
+    <p id="demo"><div id="demo1"></div></p>
+    <p id="demo2"></p>
+    <script>
+        //creando un nuevo elemento
+        var car={name:"fiat",model:"500",weight:"850kg",color:"white"};
+        //muestro los elementos del objeto
+        document.getElementById("demo").innerHTML="El coche es un: <strong>"+car.name+"</strong>";
+        document.getElementById("demo1").innerHTML="El coche es el modelo: <strong>"+car.model+"</strong>"
+        document.getElementById("demo2").innerHTML="El coche es un "+car.name+" y es es el modelo "+car.model+" con un peso de "+car.weight+" y su color es "+car.color;
+    </script>
+</body>
+</html>

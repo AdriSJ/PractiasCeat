@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+            var dni=prompt("Indique su DNI: ");
+            dniRexp=/^[0-9]{8}[A-Za-z]{1}$/
+            if(dniRexp.test(dni)){
+                var letras="TRWAGMYFPDXBNJZSQVHLCKET";
+                var posicion,dniFinal,validaSalida;
+                dniNumeros=dni.substr(0,8);
+                dniLetra=dni.charAt(8,1);
+                dniLetra=dniLetra.toUpperCase();
+                dniFinal=parseInt(dniNumeros);
+                posicion=dniFinal % 23;
+                letras=letras.charAt(posicion);
+                if(letras==dniLetra){
+                    document.write("Su DNI "+dniNumeros+"-"+dniLetra+" es CORRECTO");
+                    validaSalida="correcto"
+                }else{
+                    alert("ERROR: Los digitos o la letra no son correctos, por favor verifique y vuelva a intentarlo");
+                }
+            }else{
+                alert("ERROR: Debe ingresar [8] números y [1] letra, ha escrito "+dni);
+            }
+        }while(validaSalida!=="correcto")
+        
+    </script>
+</body>
+</html>

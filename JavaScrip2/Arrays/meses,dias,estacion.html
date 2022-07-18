@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Array Multidimensionales</title>
+    <style>
+        table{
+            text-align: center;
+            margin: 10% 10%;
+            border: solid black 1px;
+            border-collapse: collapse;
+        }
+        td,tr{
+            padding: auto;
+            border: solid black 1px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        estructura= new Array();
+        estructura=[["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"],[31,28,31,30,31,30,31,31,30,31,30,31],["INVIERNO","INVIERNO","PRIMAVERA","PRIMAVERA","PRIMAVERA","VERANO","VERANO","VERANO","OTOÑO","OTOÑO","OTOÑO","INVERNO"]];
+        var x,y,z;
+        document.write("<table>");
+
+        document.write("<tr>");
+        for (x=0;x<estructura[0].length;x++){
+            document.write("<td>");
+            document.write(estructura[0][x]);
+            document.write("</td>");
+        }
+        document.write("</tr>");
+
+        document.write("<tr>");
+        for (y=0;y<estructura[1].length;y++){
+            document.write("<td>");
+            document.write(estructura[1][y]);
+            document.write("</td>");
+        }
+        document.write("</tr>");
+
+        document.write("<tr>");
+        for (z=0;z<estructura[2].length;z++){
+            document.write("<td>");
+            document.write(estructura[2][z]);
+            document.write("</td>");
+        }
+        document.write("</tr>");
+        
+        document.write("</table>");
+    </script>
+    <script>
+         estructura=[["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"],[31,28,31,30,31,30,31,31,30,31,30,31],["INVIERNO","INVIERNO","PRIMAVERA","PRIMAVERA","PRIMAVERA","VERANO","VERANO","VERANO","OTOÑO","OTOÑO","OTOÑO","INVERNO"]];
+        var w,n;
+        document.write("<table>");
+        for (w=0;w<estructura.length;w++){
+            document.write("<tr>");
+                for (n=0;n<estructura[w].length;n++){
+            document.write("<td>");
+            document.write(estructura[w][n]);
+            document.write("</td>");
+        }
+            document.write("</tr>");
+        }    
+        document.write("</table>");
+    </script>
+</body>
+</html>

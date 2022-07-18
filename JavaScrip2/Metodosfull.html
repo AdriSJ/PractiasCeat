@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de todos los métodos</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var cad1="fotografía.jpg",cad2="jpg",cad3,cad4="cadena con espacios",r;
+        document.write("Letra en la posición 3: "+cad1.charAt(3)+"<br>");
+        document.write("Última posición de la o: "+cad1.lastIndexOf("o")+"<br>");
+        r=cad1.charAt(100);
+        document.write(r+"<br>");
+        r=cad1.lastIndexOf("z");
+        document.write(r+"<br>");
+        document.write(cad1.indexOf("o")+"<br>");
+        document.write(cad1.indexOf("o",3)+"<br>");
+        cad3=cad1.replace("jpg","gif");
+        document.write(cad3+"<br>");
+        document.write(cad4.split(" ")+"<br>");
+        document.write(cad4.split("a")+"<br>");
+        cad3=cad1.substr(4,3);
+        document.write(cad3+"<br>");
+        cad3=cad1.substring(4,6);
+        document.write(cad3+"<br>");
+        cad3=cad1.substring(cad1.lastIndexOf("."),cad1.length);
+        document.write(cad3+"<br>");
+        document.write(cad4.toUpperCase()+"<br>");
+        document.write(cad4.toLowerCase()+"<br>");
+        document.write(cad1.length+"<br>");
+    </script>
+</body>
+</html>

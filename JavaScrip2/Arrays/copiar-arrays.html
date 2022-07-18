@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Copiar arrays</title>
+</head>
+<body>
+    <script>
+        function ordenarporLongitud(cad1,cad2){
+            var l1,l2;
+            l1=cad1.lenght;
+            l2=cad2.lenght;
+            if (l1==l2)return 0;
+            if (l1<l2)return -1;
+            else return 1;
+        }
+        var cadenas=["teclado","hola","mañana"],cadenasAux1;
+        var cadenasAux2;
+        cadenasAux=cadenas;
+        cadenasAux.sort(ordenarporLongitud);//ordena las cadenasAux
+        document.write(cadenasAux+"<br><br>");
+        document.write(cadenas+"<br><br>");
+        cadenas=["teclado","hola","mañana"];//reiniciar valores
+        cadenasAux2=cadenas.slice(0);//devuelve una copia
+        cadenasAux2.sort(ordenarporLongitud);
+        document.write(cadenasAux2+"<br><br>");
+        document.write(cadenas+"<br><br>");
+        
+    </script>
+</body>
+</html>

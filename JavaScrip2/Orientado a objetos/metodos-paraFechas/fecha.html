@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos para ver la fecha.</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        d=new Date();
+        switch (d.getDay()){
+            case 0:day="Domingo";break;
+            case 1:day="Lunes";break;
+            case 2:day="Martes";break;
+            case 3:day="Miercoles";break;
+            case 4:day="Jueves";break;
+            case 5:day="Viernes";break;
+            case 6:day="Sábado";
+        }
+        switch (d.getMonth()){
+            case 0:mes="Enero";break;
+            case 1:mes="Febrero";break;
+            case 2:mes="Marzo";break;
+            case 3:mes="Abril";break;
+            case 4:mes="Mayo";break;
+            case 5:mes="Junio";break;
+            case 6:mes="Julio";break;
+            case 7:mes="Agosto";break;
+            case 8:mes="Septiembre";break;
+            case 9:mes="Octubre";break;
+            case 10:mes="Noviembre";break;
+            case 11:mes="Diciembre";
+            
+        }
+        document.getElementById("demo").innerHTML="Hoy es: "+day+" "+d.getDate()+" de "+mes+" de "+d.getFullYear()+"<br>"+"La hora actual es: "+d.getHours()+":"+d.getMinutes();
+    </script>
+</body>
+</html>

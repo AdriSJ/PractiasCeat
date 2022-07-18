@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método filter</title>
+</head>
+<body>
+    <script>
+        function mayorCero(elem,indice,array){
+            if(elem>0)return true
+            else return false
+        }
+        var numeros=[1,-4,-6,8];
+        r=numeros.filter(mayorCero);//sirve para filtar los elementos, nos mostrara solo los elementos que cumplen la condicion
+        document.write(r);//en este caso mostrara 1 y 8 que son los elementos true.
+    </script>
+</body>
+</html>

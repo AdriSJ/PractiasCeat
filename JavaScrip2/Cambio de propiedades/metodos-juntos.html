@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de propiedades</title>
+    <style>
+        *{text-align: center;}
+        div{border: 1px solid black;height: 6em;width: 400px;margin: auto;overflow: hidden}
+        h1,h2{font-size: 30px;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        .frm1{overflow: hidden;}
+    </style>
+    <script>
+        function cambiarParrafo(){
+            texto=document.getElementById("nuevo").value;
+            document.getElementById("parrafo").innerHTML=texto;
+        }
+        function Limpiar(){
+            document.getElementById("frm1").reset;
+            texto="Texto inicial";
+            document.getElementById("parrafo").innerHTML=texto;
+        }
+        function hacerGrande(){
+            document.getElementById("foto").setAttribute("width","600");
+            document.getElementById("foto").setAttribute("heigth","350");
+        }
+        function hacerPeq(){
+            document.getElementById("foto").setAttribute("width","200");
+            document.getElementById("foto").setAttribute("heigth","100");
+        }
+        function hacerOrigi(){
+            document.getElementById("foto").setAttribute("width","400");
+            document.getElementById("foto").setAttribute("heigth","270");
+        }
+        function habilitar(){
+            var elem=document.getElementById("boton");//ver el elemento de la casilla
+            var marcada=document.getElementById("casilla").checked;
+            if(marcada){
+                elem.removeAttribute("disabled");
+            }else{
+                elem.setAttribute("disabled","disabled");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Modificar atributos</h1>
+    <div id="frm1">
+        <p id="parrafo">Texto Inicial</p>
+    </div>
+    Introduzca aquí el nuevo texto: <input type="text" id="nuevo">
+    Pulse para cambiar: <button onclick="cambiarParrafo()">Enviar nuevo texto</button>
+    <button type="reset" id="limpiar" onclick="Limpiar()">Limpiar</button>
+    <br><br><hr>
+
+
+    <h2>Método setAttribute</h2>
+    <img src="./Imagenes/BillyTim.jfif" id="foto" height="270" width="400">
+    <br>
+    <button onclick="hacerGrande()">Hacer grande</button>
+    <button onclick="hacerPeq()">Hacer pequeña</button>
+    <button onclick="hacerOrigi()">Original</button>
+    <br><br><hr>
+    
+
+    <h2>Método removeAttribute</h2>
+    <form action="" method="POST">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        <input type="submit" id="boton" disabled>
+    </form>
+    <input type="checkbox" id="casilla" onchange="habilitar()">Permitir envío
+    </body>
+</html>

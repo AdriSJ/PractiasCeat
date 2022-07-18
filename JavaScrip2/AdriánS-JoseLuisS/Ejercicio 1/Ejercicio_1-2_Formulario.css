@@ -1,0 +1,52 @@
+*{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    background-color: rgb(241, 244, 248);
+}
+
+header{
+    margin: auto;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Antonio', sans-serif;
+    margin-bottom: 6%;
+}
+fieldset{
+    width: 50%;
+    margin: auto;
+}
+#resultado{
+    font-size: 25px;
+    font-weight: 900;
+}
+#enviar{
+    background-color: rgb(15, 167, 15);
+    color: white;
+    float: right;
+    margin-right: 8px;
+    padding: 10px 10px;
+    border-radius: 100%;
+    border: solid black 1px;
+}
+#borrar{
+    background-color: rgb(7, 59, 7);
+    color: white;
+    float: right;
+    padding: 10px 10px;
+    border-radius: 100%;
+    border: solid black 1px;
+}
+.alt{
+    margin-top: 10px;
+}
+#error{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

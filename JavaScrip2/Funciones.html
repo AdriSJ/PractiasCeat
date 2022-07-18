@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion</title>
+    <script type="text/javascript">
+        function holaMundo(){
+            alert("Hola Mundo")
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejemplo de prueba de funtion</h1>
+    <p>
+        En el siguiente botón, debes pulsar, y este llama la función que ejecutara el texto Hola Mundo, pero tambien veras, como es posible llamar una función dentro de un script en el body que esta declaradaen el head.
+    </p>
+    <input type="button" value="Probar" onclick="holaMundo()">
+    <br><br><br>
+    <h2>Otro ejemplo de funciones</h2>
+    <script type="text/javascript">
+        var cad1="Hace buen día", cad2="Es verdad";
+        function mostrarMensaje(mensaje){
+            document.write(mensaje);
+        }
+        mostrarMensaje("Hola"+"<br>");
+        mostrarMensaje("Buenos días"+"<br>");
+        mostrarMensaje(cad1+"<br>");
+        mostrarMensaje(cad2+"<br>");
+    </script>
+</body>
+</html>

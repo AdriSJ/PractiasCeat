@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegacion de DOM</title>
+</head>
+<body>
+    <p id="primero">Primer párrafo</p>
+    <p class="especial">Segundo párrafo</p>
+    <p class="especial">Tercer párrafo</p>
+    <hr>
+    <script>
+        var texto,primer,parrafos;
+        primer=document.getElementById("primero").innerHTML;
+        document.write(primer+"<br>");
+        parrafos=document.getElementsByTagName("p");
+        console.log(parrafos);
+        for (var i=0;i<parrafos.length;i++){
+            texto=parrafos[i].innerHTML;
+            document.write(texto+"<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locales y Globales</title>
+</head>
+<body>
+    <h1>Diferencia de Local y Global</h1>
+    <script type="text/javascript">
+        var a=1,b=2;//estas asignaciones son globales, afectan a todo el script.
+        function fun(){
+            var b,c;
+            a++;
+            b=3;//esta asignación es local y solo afecta a la función.
+            c=4;
+        }
+        fun();
+        document.write(a+"<br>");
+        document.write(b+"<br>");//aquí pedimos b y nos enseña la global, en caso de querer ver la local, tendriamos que pedir que nos muestre fun+b.
+        document.write(c);//aquí vemos como no llama a nadie porque no c no esta asignada en global.
+    </script>
+</body>
+</html>

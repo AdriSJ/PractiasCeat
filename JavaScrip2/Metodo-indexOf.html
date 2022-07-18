@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de método chartAt</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var cad="Es una prueba diferente a Hola",r;
+        r=cad.indexOf("a");
+        alert(r);//muestra la 5, porque te muestra donde esta la primera a.
+        r=cad.indexOf("a",10);
+        alert(r);//ese 10 te dice que cuenta a parir de esa posición, aquí mostraria 12
+    </script>
+    
+    <script type="text/javascript">
+        var cad="Es una prueba diferente a Hola",r;
+        r=cad.lastIndexOf("a");
+        alert(r);//muestra la 29, porque aquí te muestra la a que hay en ultima posición.
+    </script>
+</body>
+</html>

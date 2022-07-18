@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS diseño objeto: Academia</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function Academia(profesor,alumno,materia){
+            this.profesor=profesor;
+            this.alumno=alumno;
+            this.materia=materia;
+            this.toString=function(){
+                return ("La profesora " + this.profesor+" y al alumno "+this.alumno+" en el curso: "+this.materia);
+            }
+        }
+        var a=new Academia("Irina","Adrián","DAW");
+        document.getElementById("demo").innerHTML="Ceat tiene: "+a;
+    </script>
+</body>
+</html>

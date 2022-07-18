@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poner y quitar elementos lista</title>
+    <style>
+        *{
+            text-align: center;
+        } 
+        div{
+            border: solid black 1px;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            overflow:scroll;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        li{
+            margin: auto;
+        }
+        #aviso{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        function limpiar(){
+            document.getElementById("aviso").innerHTML="";
+        }
+        function validar(texto){
+            if(texto==""){
+                document.getElementById("aviso").innerHTML="No hay elementos que añadir";
+                return false;
+            }else{
+                return true;
+            }
+        }
+        function validarLongitud(longitud){
+            if(longitud==0){
+                document.getElementById("aviso").innerHTML="No hay elementos que eliminar";
+                return false;
+            }else{
+                return true;
+        }
+        }
+        function ponerElemento(){
+            limpiar();
+            var lista=document.getElementById("lista");//seleccionar al elemento padre
+            var texto=document.getElementById("texto").value;//coger el nuevo texto
+            if(validar(texto)){
+            var elem=document.createElement("li");//creamos el nuevo elemento
+            elem.innerHTML=texto;//poner el nuevo elemento al final
+            lista.appendChild(elem);
+            }
+        }
+        function quitarElemento(){
+            limpiar();
+            var lista=document.getElementById("lista");
+            var elementos=document.getElementsByTagName("li");
+            var numElem=elementos.length;
+            if(validarLongitud(numElem)){
+            var ultimo=elementos[numElem-1];
+            lista.removeChild(ultimo);
+            }
+        }
+        function quitar1Elemento(){
+            limpiar();
+            var lista=document.getElementById("lista");
+            var elementos=document.getElementsByTagName("li");
+            var numElem=elementos.length;
+            if(validarLongitud(numElem)){
+            var ultimo=elementos[0];
+            lista.removeChild(ultimo);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <ul id="lista"></ul>
+    </div>
+    <hr>
+    <p>Texto del nuevo elemento:<input type="text" id="texto"></p>
+    <button onclick="ponerElemento()">Añadir elemento</button>
+    <button onclick="quitarElemento()">Borrar ultimo elemento</button>
+    <button onclick="quitar1Elemento()">Borrar primer elemento</button>
+    <p id="aviso"></p>
+</body>
+</html>

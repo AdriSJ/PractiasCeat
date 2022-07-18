@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays multidimensionales</title>
+</head>
+<body>
+    <script>
+        var matriz=[[1,2],[3,4],[5,6]];
+        document.write(matriz[2][1]+"<br>");//muestra el 6
+        document.write(matriz[1][1]+"<br>");//muestra el 4
+        document.write(matriz[0][0]+"<br><br><hr><br>");//muestra el 1
+    </script>
+    <script>
+        var matriz2=[["trabajo ",8],["comer ",4],["dormir ",7],["recreación ",2],["varios ",3]];
+        document.write(matriz2[0][0]);
+        document.write(matriz2[0][1]+"<br>");
+        document.write(matriz2[1][0]);
+        document.write(matriz2[1][1]+"<br>");
+        document.write(matriz2[2][0]);
+        document.write(matriz2[2][1]+"<br>");
+        document.write(matriz2[3][0]);
+        document.write(matriz2[3][1]+"<br>");
+        document.write(matriz2[4][0]);
+        document.write(matriz2[4][1]+"<br><br><hr><br>");
+    </script>
+    <script>
+        var filas=3;
+        var columnas=2;
+        var matriz3=new Array(filas);
+        for(var i=0;i<matriz3.length;i++){
+            console.log(i);
+            matriz3 [i]=new Array(columnas);
+            console.log(matriz3)
+        }
+        matriz3[1][1]="coche"
+        console.log(matriz3)
+    </script>
+</body>
+</html>

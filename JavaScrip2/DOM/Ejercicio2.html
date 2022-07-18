@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Prueba de Alacenamiento DOM, llamando al ejercicio 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quasi beatae reprehenderit necessitatibus ullam cum nostrum amet, tempore dolor error incidunt, fuga a omnis eaque dicta animi molestias laboriosam harum?</p>
+    <br><br><br><h2>Pagina realizada por: <span id="nombre_develop"></span>
+    <script>
+        var nombre=localStorage.getItem("nombre");
+        document.getElementById("nombre_develop").innerHTML=nombre;
+    </script>
+    </h2>
+</body>
+</html>

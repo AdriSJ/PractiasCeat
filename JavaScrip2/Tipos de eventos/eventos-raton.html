@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos ratón</title>
+    <style>
+        img{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <input id="id1" type="button" value="Botón izq">
+    <input id="id2" type="button" value="Botón der">
+    <p>
+        <img src="./Imagenes/BillyTim.jfif" width="250px" height="140px" id="id3">
+    </p>
+    <p>
+        <img src="./Imagenes/Google.PNG" width="350px" id="id4">
+    </p>
+
+    <script>
+        function mostrarAlerta(){
+            alert(this.value);
+        }
+        function mostrarAlerta2(){
+            alert(this.value)
+        }
+        function cambiarTam(){
+            id3.style.width="300px";
+            id3.style.opacity="1";
+        }
+        function cambiarBorde(){
+            id4.style.width="375px";
+            id4.style.boxShadow="5px 10px 18px #888888";
+            id4.style.opacity="1";
+        }
+        function cambiarBorde2(){
+            id4.style.width="350px";
+            id4.style.boxShadow="none";
+            id4.style.opacity="0.5";
+        }
+        id1.addEventListener("click",mostrarAlerta);
+        id2.addEventListener("mouseover",mostrarAlerta2);
+        id3.addEventListener("mouseover",cambiarTam);
+        id4.addEventListener("mouseenter",cambiarBorde);
+        id4.addEventListener("mouseleave",cambiarBorde2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación de texto</title>
+    <script type="text/javascript">
+        function mostrarTexto(){
+            var texto;
+            texto=document.getElementById("correo").value;
+            alert(texto);
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+        <legend>Formulario</legend>
+            <label for="correo"></label>
+            <input type="email" name="email" id="correo" placeholder="ejemplo@dominio.com" size="30">
+            <input type="submit" onclick="mostrarTexto()">
+        </fieldset>    
+    </form>
+</body>
+</html>
