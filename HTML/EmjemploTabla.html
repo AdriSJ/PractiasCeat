@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo tabla</title>
+    <style>
+        table, td, th
+        {
+            border: 0.5px dotted red;
+            text-align: center;
+            border-collapse: collapse;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo práctica tabla con combinacion de celda en fila</h1>
+    <table>
+        <caption> Tabla de películas, directores y guionistas</caption>
+        <thead>
+            <tr>
+                <th>Películas</th>
+                <th>Director</th>
+                <th>Guionista</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Los otros</td>
+                <td colspan="2">Alejandro Amenábar</td>
+            </tr>
+         <!-- colspan sirve para combinar las celdas en la misma fila dos celdas-->
+            <tr>
+                <td>Los pájaros</td>
+                <td>Alfred Hitchock</td>
+                <td>Evan Hunter</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <h2>Ejemplo tabla con combinacion de celda en columna</h2>
+    <table>
+        <caption>Tabla de películas y directores</caption>
+        <thead>
+            <tr>
+                <th>Películas</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Los otros</td>
+                <td rowspan="2">Alejandro Amenábar</td>
+            </tr>
+        <!-- rowspan sirve para combinar la celda en la misma columna-->
+            <tr>
+                <td>Abre los ojos</td>
+            </tr>
+            <tr>
+                <td>Los pájaros</td>
+                <td>Alfred Hitchock</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <h2>Ejemplo tabla con color de fondo</h2>
+    <table>
+        <caption> Tabla de películas, directores y guionistas</caption>
+        <colgroup span="2" style="background-color: seagreen;"></colgroup>
+        <thead>
+            <tr>
+                <th>Películas</th>
+                <th>Director</th>
+                <th>Guionista</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Los otros</td>
+                <td>Alejandro Amenábar</td>
+                <td>Alejandro Amenábar</td>
+            </tr>
+            <tr>
+                <td>Los pájaros</td>
+                <td>Alfred Hitchock</td>
+                <td>Evan Hunter</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <table>
+        <caption> Tabla de películas, directores y guionistas</caption>
+        <colgroup>
+            <col style="background-color: skyblue;">
+            <col span="2" style="background-color: seagreen;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Películas</th>
+                <th>Director</th>
+                <th>Guionista</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Los otros</td>
+                <td>Alejandro Amenábar</td>
+                <td>Alejandro Amenábar</td>
+            </tr>
+            <tr>
+                <td>Los pájaros</td>
+                <td>Alfred Hitchock</td>
+                <td>Evan Hunter</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <h2>Tabla anidada</h2>
+    <table>
+        <caption>Tabla anidada</caption>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda normal</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

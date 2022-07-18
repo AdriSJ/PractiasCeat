@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+<h1>Formulario 1</h1>
+<h2>Input tipo text</h2>
+    <form action="" method="GET"> <!-- GET hace visible lo que pones en la URL-->
+        <label for="Nombre"></label>
+        Nombre del alumano (para insertar texto): 
+        <input type="text"><br>
+        Cuadro de texto para que no se pueda modificar
+        <input type="text" disabled value="Adrián">
+        <input type="text" readonly value="Adrián"><br>
+        Nombre del alumno (con ayuda) <!-- placeholder es para poner un ejemplo de como rellenar-->
+        <input type="text" placeholder="Ej: Adrián"><br>
+        Rellenar con campo obligatorio.
+        <input type="text" required><br>
+        Formulario para enviar.
+        <input type="submit">
+        <input type="submit" value="Enviar formulario"><br>
+        Formulario con restablecer.
+        <input type="reset">
+        <input type="reset" id="Nombre" value="Limpiar"><br>
+        Formulario con con limite de texto y limite de tamaño de caja de texto
+        <input type="text" maxlength="6" size="8"> <!-- Aqui hemos limitado la caja de texto a 6 caracteres y con la etiqueta size limitamos la caja -->
+    </form><br><br><hr>
+    <h2>Input tipo CHECKBOX</h2>
+    <form action="">Tipo de transporte:
+        <label for="coche">coche</label>
+        <input type="checkbox" value="coche" checked name="coche" id="coche"> <!--cheked es para poner la casilla directamente seleccionada-->
+        <label for="bici">Bicicleta</label>
+        <input type="checkbox" value="bici" name="bici" id="bici">
+    </form><br><br><hr>
+    <h2>Input casilla de opción o radio (redondo)</h2>
+        <form action="" method="POST">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="mujer" value="femenino">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="hombre" value="masculino">
+        </form><br><br><hr>
+    <h2>Input para subir archivo</h2>
+        <form action="" method="GET" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" = si no lo pones el programa dice directamente que es este tipo-->
+            <label for="archivo">Sube el DNI</label>
+            <input type="file" id="archivo" name="DNI" accept="image/.JPG"><br><br>   <!-- accept se usa para que que solo se pueda subir el archivo en el formato que queramos nosotros-->
+            <label for="fotos">Inserta las fotos</label>
+            <input type="file" id="fotos" multiple>  <!-- multiple se usa para poder subir mas de un archivo --> <br><br><hr>
+        </form>    
+    <h2>Input enmascarado (tipico de la contraseña)</h2>
+        <form action="" method="POST">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="ejemplo@dominio.com"><br>
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" required maxlength="8"><br>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpiar">
+        </form><br><br><hr>
+    <h2>Listas desplegable simples</h2>
+    <form action="" method="POST">
+        <!-- En esta tabla, "name" es lo que aparece en la base de datos, "value" es el valor que veremos nosotros en el servidor, se puede poner como queramos, el mismo nombre o por numero-->
+        <label for="marcas">Marca de coche favorita</label>
+        <select name="marca" id="marcas" size="3" multiple><!-- "size" lo utilizamos para ver la cantidad de opciones que queremos que veamos en la página y "muliple" lo usamos para que se puedan seleccionar varias opciones-->
+            <option value=""></option><!--esta linea la dejamos vacia para que no aparezca ninguna opcion seleccionada al abrir la página-->
+            <option value="1">Mercedes</option>
+            <option value="Audi">Audi</option>
+            <option value="fiat">Fiat</option>
+            <option value="mazda">Mazda</option>
+            <option value="opel">Opel</option>
+        </select><br>
+    <h2>Anidado de opciones</h2>
+        <label for="curso">Indica el curso</label>
+        <select name="curso" id="curso">
+            <option value="" disabled></option>
+            <optgroup label="HTML">
+                <option value="texto">textos</option>
+                <option value="formularios">formularios</option>
+                <option value="tablas">tablas</option>
+            </optgroup>
+            <optgroup label="CSS">
+                <option value="colores">colores</option>
+                <option value="tamaño">tamaño</option>
+                <option value="posiciones">posiciones</option>
+            </optgroup>
+        </select>   
+    </form><hr><br>
+    <h2>Formulario con cuadro de texto grande</h2>
+    <form action="" method="POST">
+        <label for="mensaje">Ingresa tu mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Escribe aquí..."></textarea>
+    </form><br><hr><br>
+    <h2>Formulario con recuadro</h2>
+    <form action="" method="POST">
+     <fieldset> 
+        <legend>Iniciar Sesión</legend>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="ejemplo@dominio.com"><br>
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required maxlength="8"><br>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpiar">
+    </fieldset>
+    </form><br><hr>
+    <h2>Input tipo URL</h2>
+    <form action="" method="GET">
+        <label for="web">Indica tu página web</label>
+        <input type="url" name="web" id="web">
+        <input type="submit" name="enviar" value="enviar">
+    </form><br><hr>
+    <h2>Input tipo numerico (util para telefono)</h2>
+    <form action="" method="GET">
+        <label for="telf">Nº Teléfono</label>
+        <input type="tel" name="telf" id="telf" pattern="[0-9]{9}" title="Ej: 926895898" maxlength="12" placeholder="+34 123456789"><!--"pattener" es para solicitar unos valores, en este caso para que solo valga introducir números-->
+    </form><br><hr>
+    <h2>Input de color</h2>
+    <form action="" method="GET">
+        <label for="color">Dime tu color favorito:</label>
+        <input type="color" name="color" id="color" value="#FFFFFF">
+        <input type="submit" value="entrar">
+    </form><hr>
+    <h2>Input number</h2>
+    <p>
+        <form action=""  method="GET">
+            <label for="zapatillas">Indica el número de pie</label>
+            <input type="number" id="zapatillas" name="zapatilla" min="38" max="46" step="2"><!--"step se usa para que cuente de dos en dos en este caso."-->
+            <input type="submit" name="enviar" value="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input range</h2>
+    <p>
+        <form action="" method="GET">
+            <label for="rango">Indica las horas que navegas al día: </label>0
+            <input type="range" id="rango" name="rango" min="0" max="24">24
+            <input type="submit" name="enviar" value="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input search</h2>
+    <p>
+        <form action="" method="GET">
+            <label for="buscar">Busqueda:</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Escribe tu busqueda aquí..." size="50">
+            <input type="submit" value="enviar" name="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input date (para elegir Fecha)</h2>
+    <p>
+        <form action="" method="get">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+            <input type="submit" value="enviar" name="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input month</h2>
+    <p>
+        <form action="" method="get">
+            <label for="mes">Mes de vacaciones</label>
+            <input type="month" name="mes" id="mes"><!--no funciona en firefox-->
+            <input type="submit" value="enviar" name="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input week</h2>
+    <p>
+        <form action="" method="get">
+            <label for="semana">Semana de vacaciones</label>
+            <input type="week" name="semana" id="semana"><!--no funciona en firefox-->
+            <input type="submit" value="enviar" name="enviar"><hr>
+        </form>
+    </p>
+    <h2>Input time</h2>
+    <p>
+        <form action="" method="get">
+            <label for="hora">hora favorita</label>
+            <input type="time" name="hora" id="hora">
+            <input type="submit" value="enviar" name="enviar"><hr>
+        </form>
+    </p>
+</body>
+</html>

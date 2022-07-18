@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Adrián Serrano">
+    <meta name="Descripcion" content="Formulario descrición">
+    <title>Formulario de Suscrición</title>
+</head>
+<body>
+    <h1>FORMUALRIO DE SUSCRIPCIÓN</h1>
+    <p>
+        <form action="" method="post">
+            <fieldset> 
+                <legend>Datos para el registro</legend><br>
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" required placeholder="ejemplo@dominio.com"><br><br>
+                <label for="clave">Contraseña*</label>
+                <input type="password" id="clave" name="clave" required><br><br>
+            </fieldset>
+    </p>
+    <p>
+        <fieldset> 
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre:*</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Tú nombre">
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:*</label>
+                <input type="text" name="apellidos" id="apellidos" required placeholder="Tú nombre">
+            </p>
+            <p>
+                <label for="telf">Nº Teléfono:</label>
+                <input type="tel" name="telf" id="telf" pattern="[0-9]{9}" title="Ej: 926895898" maxlength="12" placeholder="+34 123456789">
+            </p>
+            <p>
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="sexo" id="mujer" value="femenino">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" id="hombre" value="masculino">
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="text" name="edad" id="edad" size="3" maxlength="3">
+            </p>
+            <p>
+                <label for="busqueda">Buscar:</label>
+                <input type="search" name="busqueda" id="busqueda" placeholder="Ej:portatil">
+            </p>
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+            </p>
+            <p>
+                <label for="mes">¿En que mes viajaras?</label>
+                <input type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="week">¿En que semana viajaras?</label>
+                <input type="week" name="week" id="week">
+            </p>
+            <p>
+                <label for="hora">¿A qué hora te puedo llamar?</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+            <p>
+                <label for="foto">Envia tu foto:(.jpg)</label>
+                <input type="file" name="foto" id="foto" accept="image/.JPG">
+            </p>
+        </fieldset>
+    </p>
+    <p>
+        <fieldset>
+            <legend>Sobre tus RRSS</legend>
+            ¿Cuál utilizas?
+            <p>
+                <label for="rrss">Facebook</label>
+                <input type="checkbox" name="facebook" id="rrss">
+                <label for="rrss">Twitter</label>
+                <input type="checkbox" name="Twitter" id="rrss">
+                <label for="rrss">Linkedin</label>
+                <input type="checkbox" name="Linkedin" id="rrss">
+                <label for="rrss">Instagram</label>
+                <input type="checkbox" name="Instagram" id="rrss">
+                <label for="rrss">WhatsApp</label>
+                <input type="checkbox" name="WhatsApp" id="rrss">
+                <label for="rrss">SnapChat</label>
+                <input type="checkbox" name="SnapChat" id="rrss">
+                <label for="rrss">Pinterest</label>
+                <input type="checkbox" name="Pinterest" id="rrss">  
+            </p>
+            <p>
+                <label for="tiempo">Tiempo que la utilizas:</label>1 hora
+                <input type="range" name="tiempo" id="tiempo">24 horas
+            </p>
+            <p>
+                <label for="url">¿Tienes web o blog?</label>
+                <input type="url" name="web" id="url" size="50">
+            </p>
+        </fieldset>
+    </p>
+    <p>
+        Los datos señalados con * son obligatirios para el registro.
+    </p>
+    <input type="submit" value="Aceptar">
+</form>
+</body>
+</html>
